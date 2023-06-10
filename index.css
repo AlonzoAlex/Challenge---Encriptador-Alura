@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #f7eeff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+/*-----------ENCABEZADO-----------------*/
+.encabezado{
+    display: flex;
+    margin: 36px 0;
+}
+.encabezado h1{
+    color: #0A3871;
+    font-size: 2em;
+    margin: auto 0;
+    padding: auto 0;
+    vertical-align: middle;
+}
+main{
+    display: flex;
+    width: 80%;
+    margin: 3em 10% 3em 10%;
+}
+/*--------SECCION1-------------*/
+
+main textarea{
+    border: none;
+    font-size: 1.5em;
+    text-transform: lowercase;
+}
+.texto-ingresado{
+    color: #0A3871;
+}
+.advertencia{
+    font-size: 0.7em;
+    color: #3f3f3f;
+    margin: 12px;
+}
+button{
+    font-size: 1.1em;
+    width: 328px;
+    height: 67px;
+    margin: 12px;
+    border-radius: 24px;
+    border: none;
+}
+.bt-encriptar{
+    color: #FFFFFF;
+    background-color: #0A3871;
+}
+.bt-desencriptar{
+    color: #0A3871;
+    background-color: none ;
+    border: 2px solid #0A3871;
+}
+/*---------------SECCION2----------------------*/
+.seccion2{
+    border: none;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+    width: 30%;
+}
+.texto-resultado{
+    background: none;
+    color: #3f3f3f;
+    background-image: url("img/muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 90%;
+}
+.seccion2 div{
+    background: none;
+}
+.bt-copiar{
+    background: none;
+    color: #0A3871;
+    border: 2px solid #0A3871;
+    position: relative;
+    bottom: unset;
+}
+
+/*-----------------------responsividad-----------------*/
+@media screen and (max-width:1200px){
+    .encabezado h1{
+        font-size: 1.5em;
+    }
+    main{
+        flex-direction: column;
+    }
+    .texto-ingresado{
+        height: 300px;
+    }
+    .texto-resultado{
+        height: 300px;
+    }
+    button{
+        margin: 6px 0;
+    }
+    .seccion2{
+        width: 100%;
+        margin: 0;
+    }
+}
